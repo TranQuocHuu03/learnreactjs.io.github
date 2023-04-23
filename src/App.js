@@ -4,12 +4,15 @@ import React, { Component } from 'react';
 
 // import "./components/header.css";
 
-import Product from './component-state-product/product'
+// import Product from './component-state-product/product'
 // import JustAnotherCounter from './Hooks/JustAnotherCounter';
 // import Counters from './Hooks/Counters';
 // import LoginForm from './Hooks/LoginForm';
 // import MyColor from './Hooks/MyColor';
-import Car from './Hooks/HelloBrand';
+// import Car from './Hooks/HelloBrand';
+
+import Score from './Forminput/DemoScore';
+import DemoScore from './Forminput/DemoScore';
 class Prod extends Component{
   render(){
     return (
@@ -76,7 +79,9 @@ class Prod extends Component{
         {/* <JustAnotherCounter/> */}
         {/* <LoginForm/> */}
         {/* <MyColor/> */}
-        <Car/>
+        {/* <Car/> */}
+        {/* <Score/> */}
+        <DemoScore/>
          
       </>
     );
