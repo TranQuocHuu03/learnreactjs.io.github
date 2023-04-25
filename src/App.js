@@ -10,9 +10,13 @@ import React, { Component } from 'react';
 // import LoginForm from './Hooks/LoginForm';
 // import MyColor from './Hooks/MyColor';
 // import Car from './Hooks/HelloBrand';
+// import Score from './Forminput/DemoScore';
+// import DemoScore from './Forminput/DemoScore';
+// import Drink from './Forminput/Drink';
+// import OrderForm from "./Forminput/OrderForm";
+// import Checkout from './Forminput/Checkout';
+import Paymentdrink from './Forminput/Paymentdrink';
 
-import Score from './Forminput/DemoScore';
-import DemoScore from './Forminput/DemoScore';
 class Prod extends Component{
   render(){
     return (
@@ -81,8 +85,11 @@ class Prod extends Component{
         {/* <MyColor/> */}
         {/* <Car/> */}
         {/* <Score/> */}
-        <DemoScore/>
-         
+        {/* <DemoScore/> */}
+        {/* <Drink/> */}
+        {/* <Checkout/> */}
+        {/* <OrderForm/> */}
+         <Paymentdrink/>
       </>
     );
   }

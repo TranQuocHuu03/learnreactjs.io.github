@@ -14,20 +14,22 @@ class Score extends Component {
         this.handleChange=this.handleChange.bind(this);
         this.handleSubmit=this.handleSubmit.bind(this);
     }
-    handleChange = (event) => {
+    handleChange =async (event) => {
     let key = event.target.name;
     let val = event.target.value;
-    this.setState({ [key]: val });
-    this.setState((state) => ({
-        avg: parseFloat((parseFloat(state.hk1) + parseFloat(state.hk2)) / 2),
-    }));
-    this.setResult();
-    this.setXL();
-};
+    await this.setState({ [key]: val });
+    }
 
+    setavg = ()=> {
+      this.setState ({avg :parseFloat((parseFloat(state.hk1) + parseFloat(state.hk2)) / 2)})
+    };
+    
     handleSubmit=(event)=>{
         event.preventDefault();
-        alert("ban la hoc sinh"+ this.state.xl);
+        // alert("ban la hoc sinh"+ this.state.xl);
+        this.setavg();
+        this.setResult();
+        this.setXL();
     };
 
     setResult =()=>{
@@ -87,6 +89,6 @@ class Score extends Component {
             </div>
         );
     }
-}
 
+}
 export default Score;

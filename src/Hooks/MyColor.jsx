@@ -12,7 +12,4 @@ function MyColor() {
         </>
     )
 }
-
-
-
 export default MyColor;

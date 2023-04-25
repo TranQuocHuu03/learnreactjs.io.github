@@ -10,10 +10,10 @@ class DemoScore extends Component {
             KQ:''
         };
     }
-    myChangeHandler =(event)=>{
+    myChangeHandler =async(event)=>{
         let key= event.target.name;
         let value=event.target.value;
-        this.setState({
+       await this.setState({
             [key]:value
         });
     }
@@ -27,7 +27,7 @@ class DemoScore extends Component {
         }
         else{
             Medium =(parseFloat(hk1) + parseFloat(hk2))/2;
-            this.setState({MediumScore:Medium});
+             this.setState({MediumScore:Medium});
             if(Medium>=9){
                 this.setState({KQ:"học sinh giỏi"});
                 this.setState({academicPower: "Được lên lớp"});
@@ -40,7 +40,7 @@ class DemoScore extends Component {
                 this.setState({KQ:"học sinh trung bình"});
                 this.setState({academicPower: "Được lên lớp"});
             }
-            else{
+            else if(Medium>=0 && Medium<5){
                 this.setState({KQ:"học sinh yếu"});
                 this.setState({academicPower: "Không được lên lớp"});
             }
