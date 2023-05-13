@@ -15,8 +15,11 @@ import React, { Component } from 'react';
 // import Drink from './Forminput/Drink';
 // import OrderForm from "./Forminput/OrderForm";
 // import Checkout from './Forminput/Checkout';
-import Paymentdrink from './Forminput/Paymentdrink';
-
+// import Paymentdrink from './Forminput/Paymentdrink';
+// import App from './HookAPI/demo';
+import ShowUser from './fetch/ShowUser';
+// import App from './fetch/fetch';
+// import App from './fetch/product';
 class Prod extends Component{
   render(){
     return (
@@ -89,7 +92,10 @@ class Prod extends Component{
         {/* <Drink/> */}
         {/* <Checkout/> */}
         {/* <OrderForm/> */}
-         <Paymentdrink/>
+         {/* <Paymentdrink/> */}
+         {/* <App></App> */}
+         <ShowUser></ShowUser>
+         {/* <App></App> */}
       </>
     );
   }

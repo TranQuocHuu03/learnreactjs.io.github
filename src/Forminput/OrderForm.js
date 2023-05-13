@@ -10,7 +10,6 @@ function OrderForm() {
     const { name, value } = e.target;
     setOrder({ ...order, [name]: value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let newTotal = total;

@@ -10,7 +10,6 @@ class Paymentdrink extends Component {
       money: ''
     };
   }
-
   checkOrder = (money) => {  // được gọi bởi submitForm
     if (money >= this.state.price) {
       alert(
@@ -32,7 +31,7 @@ class Paymentdrink extends Component {
     } else {
       if (this.state.money === '') {
         alert('Vui lòng nhập số tiền của bạn');
-      } else {
+      } else{
         this.checkOrder(this.state.money);
       }
     }
@@ -57,7 +56,7 @@ class Paymentdrink extends Component {
         this.setState({ price: 2000 });
       }
     }
-    this.setState({ [name]: value });
+    this.setState({[name]:value });
   };
 
   render() {
@@ -67,8 +66,7 @@ class Paymentdrink extends Component {
           <table>
             <tbody>
               <tr>
-                <td>Mời bạn chọn thức uống:</td>
-
+                <td>Mời bạn chọn thức uống: </td>
                 <td>
                   <select name="type" onChange={this.setHandle}>
                     <option selected hidden>
